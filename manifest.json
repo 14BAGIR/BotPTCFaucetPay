@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Bot PTC FaucetPay",
+  "version": "1.0",
+  "description": "It Is The Bot",
+  "permissions": ["activeTab"],
+  
+  "browser_action": {
+    "default_title": "Click to noting"
+ },
+
+  "content_scripts": [
+    {
+      "matches": ["https://faucetpay.io/*", "https://www.google.com/recaptcha/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}
